@@ -3,7 +3,16 @@ body {
     margin: 20px;
     line-height: 26px;
 }
-
+table, td, th {    
+    border: 1px solid #dddddd;
+}
+table {
+    border-collapse: collapse;
+    
+}
+th, td {
+    padding: 15px;
+}
 .container {
     xmin-width: 900px;
 }
@@ -59,21 +68,24 @@ body {
     padding: 0;
 }
 
-a:link, a:visited {
+#menulist a:link, a:visited {
     background-color: #d4d4d4;
     color: green;
     padding: 14px 25px;
 	margin-left: 4px;
+	margin-top: 5px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
 	width: 80%;
 }
 
-a:hover, a:active {
+#menulist a:hover, a:active {
     background-color: #ffffff;
 }
-
+#menulist .active {
+	background-color: #ffffff;
+}
 
 @media (max-width: 800px) {
     #sidebar {
